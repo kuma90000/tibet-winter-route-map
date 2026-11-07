@@ -1,6 +1,10 @@
 # 西藏路线地图 · 17路线图文版
 
-**本次出行： [2026.12.24—2027.01.03 · 最新 A/B 行程讨论网站](https://kuma90000.github.io/tibet-winter-route-map/winter-itinerary/)** · [对应源码](winter-itinerary/)
+**本次出行：[藏冬 · 已选 B 线详细行程网站](https://kuma90000.github.io/tibet-winter-route-map/b-journey/)** · [对应源码](b-journey/)
+
+2026.12.24—2027.01.03，11天10晚。逐日景点、住宿候选、海拔、18张实景照片、出发清单与天气机动安排。
+
+[此前的 A/B 讨论版本](https://kuma90000.github.io/tibet-winter-route-map/winter-itinerary/) · [对应源码](winter-itinerary/)
 
 [打开交互地图](https://kuma90000.github.io/tibet-winter-route-map/) · [下载完整源码](https://kuma90000.github.io/tibet-winter-route-map/source-package.zip)
 

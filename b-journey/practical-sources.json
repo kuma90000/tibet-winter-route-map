@@ -1,0 +1,29 @@
+{
+  "nia": {
+    "title": "电子边境管理区通行证签发服务指南",
+    "org": "国家移民管理局",
+    "url": "https://www.nia.gov.cn/n741445/n741604/n1787214/c1792376/content.html",
+    "date": "2026-04-02",
+    "kind": "official"
+  },
+  "baima_old_close": {
+    "title": "卡久景区、白玛林措（库拉岗日）景区临时关闭通告",
+    "org": "洛扎县人民政府",
+    "url": "https://www.luozha.gov.cn/xwzx/tggs/202502/t20250226_147913.html",
+    "date": "2025-02-26",
+    "kind": "official_historical"
+  },
+  "seka": {
+    "title": "九层公子塔——赛卡古托寺",
+    "org": "山南市文化和旅游局",
+    "url": "https://lyfzj.shannan.gov.cn/zjsn/jdjs/201903/t20190308_37443.html",
+    "date": "2019-03-08",
+    "kind": "official"
+  },
+  "cdc": {
+    "title": "High-Altitude Travel and Altitude Illness",
+    "org": "CDC Yellow Book",
+    "url": "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html",
+    "kind": "medical_primary"
+  }
+}
