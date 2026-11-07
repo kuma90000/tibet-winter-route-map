@@ -1,5 +1,7 @@
 # 西藏路线地图 · 17路线图文版
 
+**本次出行： [2026.12.24—2027.01.03 · 最新 A/B 行程讨论网站](https://kuma90000.github.io/tibet-winter-route-map/winter-itinerary/)** · [对应源码](winter-itinerary/)
+
 [打开交互地图](https://kuma90000.github.io/tibet-winter-route-map/) · [下载完整源码](https://kuma90000.github.io/tibet-winter-route-map/source-package.zip)
 
 2026-10-04：在原14条路线基础上增加3条冬季研究候选，共17条路线、102个地点、163份每日/路段记录。原44张授权照片与14个多图相册完整保留。
