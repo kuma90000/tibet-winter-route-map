@@ -1,5 +1,7 @@
 # 向雪山出发 · 西藏冬日同行计划
 
+> 历史 A/B 讨论稿。本目录保留此前资料，住宿、机票与实际行程请以[最新 B 线网站](https://kuma90000.github.io/tibet-winter-route-map/b-journey/)为准。
+
 **[打开行程网站](https://kuma90000.github.io/tibet-winter-route-map/winter-itinerary/)**
 
 2026 年 12 月 24 日至 2027 年 1 月 3 日，11 天 10 晚，林芝进、拉萨出。用于和朋友对比路线、查看每天车程与住宿海拔，并讨论旅行安排。
@@ -43,3 +45,4 @@ GitHub Pages 使用 `main` 分支发布，本站位于 `winter-itinerary/` 子�
 照片的作者、原始链接、许可和处理方式见 [`assets/credits.json`](assets/credits.json)，页面中也保留署名。各图继续遵循其原许可，不扩展到独立代码和行程内容。
 
 这是行程网站的独立 GitHub 版本；原 [Sites 网页](https://tibet-winter-journey-1224.tuqiaosong.chatgpt.site/) 继续可用。两个部署地址不会自动互相同步。
+

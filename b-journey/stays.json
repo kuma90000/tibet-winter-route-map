@@ -1,322 +1,114 @@
 {
   "groups": [
     {
+      "id": "chongqing",
+      "title": "重庆 · 中转过夜",
+      "dates": "12.23入住 → 12.24退房 · 1晚",
+      "alt": "低海拔中转",
+      "summary": "Moxy 已订，次日衔接林芝早班机。",
+      "status": "已订",
+      "hotel": "重庆 Moxy",
+      "checks": [
+        "具体分店名称待补充。",
+        "24日07:15起飞，提前核对酒店至机场的早班送机。"
+      ]
+    },
+    {
       "id": "sosong",
       "title": "索松村",
-      "dates": "12.24 · 1晚",
-      "alt": "约3100米",
-      "photo": "namcha_sunset",
-      "summary": "把雪山的视野放在首位。",
-      "hotels": [
-        {
-          "id": "sosong-taohuayun",
-          "name": "索松村桃花韵酒店",
-          "type": "雪山观景候选",
-          "location": "雅鲁藏布大峡谷索松村内",
-          "why": "以村内雪山视野为优先，方便日落和次日晨光观景。",
-          "checks": [
-            "预订时确认所选房型实际朝向与遮挡",
-            "确认冬季供暖、热水和晚餐",
-            "参考照片不保证当晚云量或日照金山"
-          ],
-          "selected": false,
-          "sources": [
-            {
-              "title": "循《天地辽阔》，探雅鲁藏布大峡谷",
-              "org": "林芝市文化和旅游局／米林文旅",
-              "url": "https://wlj.linzhi.gov.cn/lzslyfzwyh/c103820/202412/11a666c3f9b7471db375b965e6db70a2.shtml",
-              "date": "2024-12-11",
-              "kind": "official"
-            }
-          ],
-          "link": "https://wlj.linzhi.gov.cn/lzslyfzwyh/c103820/202412/11a666c3f9b7471db375b965e6db70a2.shtml",
-          "linkLabel": "查看酒店资料",
-          "verified": "地点由官方文旅核实；房态未核"
-        },
-        {
-          "id": "sosong-jimei",
-          "name": "吉美·南迦巴瓦山居",
-          "type": "村内民宿候选",
-          "location": "米林市派镇索松村",
-          "why": "索松村内的另一住宿选择，可比较房型朝向与公共观景空间。",
-          "checks": [
-            "确认实际房址在索松村，核对所选房型的雪山朝向",
-            "确认冬季营业、供暖、热水和晚餐"
-          ],
-          "selected": false,
-          "sources": [
-            {
-              "title": "吉美·南迦巴瓦山居",
-              "org": "携程",
-              "url": "https://hotels.ctrip.com/hotels/808488.html",
-              "kind": "booking_platform"
-            }
-          ],
-          "link": "https://hotels.ctrip.com/hotels/808488.html",
-          "linkLabel": "查看酒店资料",
-          "verified": "平台核实名称与位置；无亲住评价"
-        }
+      "dates": "12.24入住 → 12.25退房 · 1晚",
+      "alt": "区域约3100米",
+      "summary": "索松平措康桑雪里桃花，已订。",
+      "status": "已订",
+      "hotel": "索松平措康桑雪里桃花",
+      "checks": [
+        "仅覆盖24日晚，不是24、25日连住两晚。",
+        "确认冬季供暖、热水、晚餐和雪山观景位置。"
       ]
     },
     {
       "id": "jeba",
-      "title": "结巴村小民宿",
-      "dates": "12.25 · 1晚",
-      "alt": "约3500米",
-      "photo": "jeba",
-      "summary": "简单、暖和，住进湖边的村子。",
-      "hotels": [
-        {
-          "id": "jeba-manlv",
-          "name": "巴松措慢旅客栈（结巴村店）",
-          "type": "小民宿候选",
-          "location": "工布江达县错高乡结巴村34号",
-          "why": "符合25日住结巴小民宿的安排，翌日主湖慢游和换住松赞方便。",
-          "checks": [
-            "确认冬季供暖、热水、停车与行李搬运",
-            "确认早餐时间，方便26日游主湖后换住松赞",
-            "如需要供氧或景观房，直接向客栈核实具体房型与设施"
-          ],
-          "selected": false,
-          "sources": [
-            {
-              "title": "巴松措慢旅客栈地图",
-              "org": "高德",
-              "url": "https://www.amap.com/place/B0L1VSBGLN",
-              "kind": "map"
-            },
-            {
-              "title": "巴松措慢旅客栈（结巴村店）",
-              "org": "携程",
-              "url": "https://hotels.ctrip.com/hotels/131698235.html",
-              "kind": "booking_platform"
-            },
-            {
-              "title": "结巴村民宿集群",
-              "org": "林芝市人民政府",
-              "url": "https://www.linzhi.gov.cn/linzhi/xwzx/202607/c56f7d934cbf4cc396637165cfc7fad3.shtml",
-              "date": "2026-07",
-              "kind": "official"
-            }
-          ],
-          "link": "https://hotels.ctrip.com/hotels/131698235.html",
-          "linkLabel": "查看酒店资料",
-          "verified": "两平台相互核实；非官方酒店网站"
-        }
+      "title": "结巴村 · 待落实",
+      "dates": "12.25晚 · 1晚",
+      "alt": "区域约3500米",
+      "summary": "这晚尚未确认住宿；原候选慢旅客栈已售罄。",
+      "status": "待订",
+      "hotel": "巴松措／结巴村住宿待定",
+      "checks": [
+        "慢旅已售罄，请另选结巴村住宿。",
+        "另选酒店时核对冬季营业、供暖、热水与取消条款。"
       ]
     },
     {
       "id": "songtsam",
       "title": "松赞巴松措林卡",
-      "dates": "12.26 · 1晚",
-      "alt": "住宿区约3500米",
-      "photo": "basum",
-      "summary": "这一晚已经选好酒店，下午留给湖与休息。",
-      "hotels": [
-        {
-          "id": "songtsam-basum",
-          "name": "松赞巴松措林卡",
-          "type": "已选酒店，待落实预订",
-          "location": "林芝市工布江达县错高乡结巴村",
-          "why": "湖畔休息日的核心住宿；26日下午留给酒店和周边湖岸。",
-          "checks": [
-            "官网标注14:00入住、12:00退房，具体按订单",
-            "提前确认27日早饭、打包早餐和新措接驳",
-            "房型、房态与活动均未代订"
-          ],
-          "selected": true,
-          "sources": [
-            {
-              "title": "松赞巴松措林卡",
-              "org": "松赞官网",
-              "url": "https://www.songtsam.com/hotel/30",
-              "kind": "hotel_official"
-            }
-          ],
-          "link": "https://www.songtsam.com/hotel/30",
-          "linkLabel": "酒店官网",
-          "verified": "官方资料核实"
-        }
-      ]
+      "dates": "已订1晚 · 行程拟12.26，日期待核",
+      "alt": "区域约3500米",
+      "summary": "一晚预订已确认，具体入住日期尚未与订单核实。",
+      "status": "已订1晚 · 日期待核",
+      "hotel": "松赞巴松措林卡",
+      "checks": [
+        "实际入住日期待核，请与订单确认。",
+        "核对日期后再落实主湖、新措、早餐与退房衔接。"
+      ],
+      "link": "https://www.songtsam.com/hotel/30",
+      "linkLabel": "酒店官网"
     },
     {
       "id": "lhasa",
-      "title": "拉萨连住与返程夜",
-      "dates": "12.27–29、01.02 · 共4晚",
-      "alt": "约3650米",
-      "photo": "potala",
-      "summary": "老城步行，或舒适配套，按大家的偏好选。",
-      "hotels": [
-        {
-          "id": "lhasa-bangdacang",
-          "name": "拉萨邦达仓古建酒店",
-          "type": "老城步行优先",
-          "location": "城关区八廓南街绕赛1巷7号",
-          "why": "适合八廓街和老城漫步，体验古建院落。",
-          "checks": [
-            "老城步行区域需确认车辆停靠及行李接送",
-            "确认冬季供暖、隔音、楼梯与房型采光",
-            "27日晚可能晚到，提前告知前台"
-          ],
-          "selected": false,
-          "sources": [
-            {
-              "title": "拉萨邦达仓古建酒店",
-              "org": "携程",
-              "url": "https://hotels.ctrip.com/hotels/845337.html",
-              "kind": "booking_platform"
-            },
-            {
-              "title": "香馥记忆 古宅新貌——行走八廓街内古院民宿",
-              "org": "西藏自治区文化和旅游厅",
-              "url": "https://wlt.xizang.gov.cn/xwzx_69/jdxw/201809/t20180913_115787.html",
-              "date": "2018-09-13",
-              "kind": "official"
-            }
-          ],
-          "link": "https://hotels.ctrip.com/hotels/845337.html",
-          "linkLabel": "查看酒店资料",
-          "verified": "历史由官方资料支持；当前酒店地址用平台核实"
-        },
-        {
-          "id": "lhasa-stregis",
-          "name": "拉萨瑞吉度假酒店",
-          "type": "舒适度与配套优先",
-          "location": "拉萨市江苏路22号",
-          "why": "官方酒店资料可直接查询房型，适合连住休整后再走高海拔段。",
-          "checks": [
-            "官网标注15:00入住、12:00退房，按订单确认",
-            "连住3晚可减少换房；1月2日返回是否同店自选",
-            "27日到达时间、取消条款、供氧设施使用规则单独确认"
-          ],
-          "selected": false,
-          "sources": [
-            {
-              "title": "拉萨瑞吉度假酒店",
-              "org": "万豪官网",
-              "url": "https://www.marriott.com.cn/hotels/lxaxr-the-st-regis-lhasa-resort/overview/",
-              "kind": "hotel_official"
-            }
-          ],
-          "link": "https://www.marriott.com.cn/hotels/lxaxr-the-st-regis-lhasa-resort/overview/",
-          "linkLabel": "酒店官网",
-          "verified": "官网核实"
-        },
-        {
-          "id": "lhasa-shangrila",
-          "name": "拉萨香格里拉",
-          "type": "标准化酒店备选",
-          "location": "拉萨市罗布林卡路19号",
-          "why": "布宫与罗布林卡方向方便，去八廓街可安排市内交通。",
-          "checks": [
-            "不把此酒店写成八廓街步行区内",
-            "确认停车、早餐与冬季设施服务"
-          ],
-          "selected": false,
-          "sources": [
-            {
-              "title": "关于拉萨香格里拉",
-              "org": "香格里拉官网",
-              "url": "https://www.shangri-la.com/cn/lhasa/shangrila/about/",
-              "kind": "hotel_official"
-            }
-          ],
-          "link": "https://www.shangri-la.com/cn/lhasa/shangrila/about/",
-          "linkLabel": "酒店官网",
-          "verified": "官网核实"
-        }
-      ]
+      "title": "拉萨 · 瑞吉连住",
+      "dates": "12.27–29晚 · 12.30离店 · 3晚",
+      "alt": "区域约3650米",
+      "summary": "拉萨瑞吉度假酒店，27、28、29日已订。",
+      "status": "已订",
+      "hotel": "拉萨瑞吉度假酒店",
+      "checks": [
+        "27日转场优先安全到达，不为完成新措赶夜路。",
+        "1月2日晚改在贡嘎机场片区，不能再按瑞吉安排。"
+      ],
+      "link": "https://www.marriott.com.cn/hotels/lxaxr-the-st-regis-lhasa-resort/overview/",
+      "linkLabel": "酒店官网"
     },
     {
       "id": "lozha",
-      "title": "洛扎县城",
-      "dates": "12.30 · 1晚",
-      "alt": "约3800–3900米",
-      "photo": "pumo",
-      "summary": "高山口之后，回县城吃饭和休息。",
-      "hotels": [
-        {
-          "id": "lozha-longba",
-          "name": "洛扎县陇巴庄园酒店",
-          "type": "县城住宿候选",
-          "location": "洛扎镇县城；实际接驾地址以酒店确认",
-          "why": "30日长途转场后在县城休整、吃饭、补给，避免直接住5000米湖边。",
-          "checks": [
-            "核对县城内的具体地址、冬季营业与停车",
-            "确认供暖、热水、早餐和可取消条款",
-            "30日可能较晚抵达，提前告知到店时间"
-          ],
-          "selected": false,
-          "sources": [
-            {
-              "title": "洛扎县促消费参与商户名单",
-              "org": "洛扎县人民政府",
-              "url": "https://www.luozha.gov.cn/xwzx/tggs/202410/t20241009_141246.html",
-              "date": "2024-10-09",
-              "kind": "official"
-            },
-            {
-              "title": "山南旅游奖励资金公示",
-              "org": "山南市人民政府",
-              "url": "https://www.shannan.gov.cn/zwgk/zfxxgkml/gsgg/202311/t20231124_128266.html",
-              "date": "2023-11-24",
-              "kind": "official"
-            }
-          ],
-          "link": "https://www.luozha.gov.cn/xwzx/tggs/202410/t20241009_141246.html",
-          "linkLabel": "查看酒店资料",
-          "verified": "政府资料核实酒店存在；当前房态/详细地址需酒店确认"
-        }
+      "title": "洛扎 · 陇巴庄园",
+      "dates": "12.30入住 → 01.01退房 · 2晚",
+      "alt": "县城区域约3800米",
+      "summary": "洛扎陇巴庄园，已订；覆盖30、31日晚。",
+      "status": "已订",
+      "hotel": "洛扎陇巴庄园",
+      "checks": [
+        "31日白马徒步后仍返回洛扎，车程与折返时限需要重核。",
+        "1月1日退房，不覆盖1月1日晚。"
       ]
     },
     {
-      "id": "sexiang",
-      "title": "色乡",
-      "dates": "12.31、01.01 · 默认2晚",
-      "alt": "乡驻地约3700–3800米",
-      "photo": "kula",
-      "summary": "徒步后回较低处，给天气留出弹性。",
-      "hotels": [
-        {
-          "id": "sexiang-nuojielin",
-          "name": "诺杰林酒店",
-          "type": "白马徒步两晚候选",
-          "location": "山南市洛扎县色乡",
-          "why": "徒步后回到较低处住宿，并保留第二天天气补走的灵活性。",
-          "checks": [
-            "核对实际房址在色乡乡驻地附近；措玉村住宿海拔更高",
-            "确认跨年两晚营业、供暖、热水与早晚餐",
-            "优先可取消，补走白马或提前返拉萨按天气调整"
-          ],
-          "selected": false,
-          "sources": [
-            {
-              "title": "诺杰林酒店",
-              "org": "高德",
-              "url": "https://www.amap.com/place/B0JBPHARGO",
-              "kind": "map"
-            },
-            {
-              "title": "诺杰林酒店",
-              "org": "携程",
-              "url": "https://hotels.ctrip.com/hotels/104715854.html",
-              "kind": "booking_platform"
-            },
-            {
-              "title": "色乡边境派出所驻地资料",
-              "org": "康巴卫视",
-              "url": "https://www.kangbatv.com/m/xw/qxxw/2024-12-21/710511.html",
-              "date": "2024-12-21",
-              "kind": "news"
-            }
-          ],
-          "link": "https://hotels.ctrip.com/hotels/104715854.html",
-          "linkLabel": "查看酒店资料",
-          "verified": "平台资料核实；准确酒店海拔与房态待核"
-        }
+      "id": "flex",
+      "title": "1月1日 · 待落实",
+      "dates": "01.01晚 · 1晚",
+      "alt": "色乡约3800米；措玉约4100–4200米",
+      "summary": "根据白马完成情况、路况和身体状态选住宿。",
+      "status": "待订",
+      "hotel": "库拉岗日周边／条件性转场住宿待定",
+      "checks": [
+        "色乡、措玉、拉萨或泽当的替代走法均不代表已有订单。",
+        "补走白马与转场泽当不能在同一天叠加。"
+      ]
+    },
+    {
+      "id": "airport",
+      "title": "贡嘎机场片区",
+      "dates": "01.02入住 → 01.03退房 · 1晚",
+      "alt": "区域约3560米",
+      "summary": "平措康桑酒店（贡嘎机场店），已预订成功。",
+      "status": "已订",
+      "hotel": "平措康桑酒店（贡嘎机场店）",
+      "checks": [
+        "返程前一晚住机场片区，不再绕回拉萨市区。",
+        "次日3U6140于11:50从T3出发，核对酒店接送和提前到场时间。"
       ]
     }
   ],
-  "checkedAt": "2026-11-07",
-  "note": "酒店均为计划或候选，未代订；不提供未经核实的实时房价和房态。照片为目的地实景，不代表酒店客房。"
+  "checkedAt": "2026-11-10",
+  "note": "截至本次更新，12月25日晚与1月1日晚住宿待落实；松赞已订1晚但日期待核。公开页面不含姓名、订单号、票号、联系方式或证件信息。"
 }

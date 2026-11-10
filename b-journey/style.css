@@ -12,3 +12,6 @@
 /* Reading comfort and single-column vertical caption. */
 .hero-count span{height:auto;white-space:nowrap}.schedule-row>div,.day-notes li{font-size:13px}.practical-list details p{font-size:13px}.check-row{font-size:12px}.place-card p{font-size:12px}.hotel-card ul{font-size:12px}
 @media(max-width:760px){.schedule-row>div,.day-notes li,.practical-list details p{font-size:12px}.check-row{font-size:12px}.place-card p{font-size:11px}.hotel-card ul{font-size:11px}.hero-count span{font-size:8px}}
+
+/* Confirmed itinerary update */
+#flights .hotel-card h3{font-size:2rem;margin:14px 0}.flight-time{display:block;font-size:1.6rem;margin:18px 0}.flight-route{font-weight:600}#flights .hotel-grid{align-items:stretch}#flights .hotel-card{height:100%}
