@@ -11,7 +11,9 @@
       "checks": [
         "具体分店名称待补充。",
         "24日07:15起飞，提前核对酒店至机场的早班送机。"
-      ]
+      ],
+      "photoPendingTitle": "重庆 Moxy · 门店待核",
+      "photoPending": "尚未提供具体分店，先不放可能错配的酒店图片；核对门店后补图。"
     },
     {
       "id": "sosong",
@@ -24,7 +26,29 @@
       "checks": [
         "仅覆盖24日晚，不是24、25日连住两晚。",
         "确认冬季供暖、热水、晚餐和雪山观景位置。"
-      ]
+      ],
+      "photos": [
+        {
+          "title": "索松雪里桃花 · 窗边景观",
+          "alt": "平措康桑雪里桃花度假庄园（索松南迦巴瓦店）公开展示图：窗边座椅及南迦巴瓦山景，实景风格",
+          "url": "https://dimg04.c-ctrip.com/images/1mc2u12000az6earu8AE9_W_1280_853_R5_Q70.jpg",
+          "source": "https://hotels.ctrip.com/hotels/106755228.html",
+          "credit": "携程门店页",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "title": "索松雪里桃花 · 酒店外观",
+          "alt": "索松雪里桃花 · 酒店外观，桃花季酒店外观，非冬季实况",
+          "url": "https://dimg04.c-ctrip.com/images/1mc6s12000b0afnvx0194_W_1280_853_R5_Q70.jpg",
+          "source": "https://hotels.ctrip.com/hotels/106755228.html",
+          "credit": "携程门店页",
+          "width": 654,
+          "height": 853
+        }
+      ],
+      "link": "https://hotels.ctrip.com/hotels/106755228.html",
+      "linkLabel": "查看门店与更多图片"
     },
     {
       "id": "jeba",
@@ -37,22 +61,35 @@
       "checks": [
         "慢旅已售罄，请另选结巴村住宿。",
         "另选酒店时核对冬季营业、供暖、热水与取消条款。"
-      ]
+      ],
+      "photoPendingTitle": "住宿待定，暂不配酒店图"
     },
     {
       "id": "songtsam",
-      "title": "松赞巴松措林卡",
-      "dates": "已订1晚 · 行程拟12.26，日期待核",
+      "title": "巴松措 · 松赞",
+      "dates": "已订1晚 · 行程拟12.26，门店与日期待核",
       "alt": "区域约3500米",
-      "summary": "一晚预订已确认，具体入住日期尚未与订单核实。",
-      "status": "已订1晚 · 日期待核",
-      "hotel": "松赞巴松措林卡",
+      "summary": "巴松措松赞一晚已订，具体门店与入住日期尚未与订单核实。",
+      "status": "已订1晚 · 门店与日期待核",
+      "hotel": "巴松措松赞（具体门店待核）",
       "checks": [
-        "实际入住日期待核，请与订单确认。",
+        "请与订单核对具体门店和入住日期。",
         "核对日期后再落实主湖、新措、早餐与退房衔接。"
       ],
       "link": "https://www.songtsam.com/hotel/30",
-      "linkLabel": "酒店官网"
+      "linkLabel": "松赞巴松措林卡官网（参考）",
+      "photoNote": "参考图为松赞巴松措林卡，具体预订门店与入住日期待订单核对。照片不代表已订房型、窗景或冬季实况。",
+      "photos": [
+        {
+          "title": "松赞巴松措林卡 · 参考图",
+          "alt": "松赞巴松措林卡官网照片，木建筑之间可见湖山；预订门店待核",
+          "url": "https://image.songtsam.com/upload/20230713/6aab28865d6d46e9b926369cf1ee6a00.jpeg",
+          "source": "https://www.songtsam.com/hotel/30",
+          "credit": "松赞官网",
+          "width": 6720,
+          "height": 4480
+        }
+      ]
     },
     {
       "id": "lhasa",
@@ -67,7 +104,27 @@
         "1月2日晚改在贡嘎机场片区，不能再按瑞吉安排。"
       ],
       "link": "https://www.marriott.com.cn/hotels/lxaxr-the-st-regis-lhasa-resort/overview/",
-      "linkLabel": "酒店官网"
+      "linkLabel": "酒店官网",
+      "photos": [
+        {
+          "title": "拉萨瑞吉 · 酒店外观",
+          "alt": "万豪官网展示的拉萨瑞吉度假酒店夜间外观",
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/LXAXR/lxaxr-exterior-8795-hor-wide.jpg?downsize=1000px:*&interpolation=progressive-bilinear&output-quality=80",
+          "source": "https://www.marriott.com/en-us/hotels/lxaxr-the-st-regis-lhasa-resort/photos/",
+          "credit": "万豪官网",
+          "width": 1000,
+          "height": 562
+        },
+        {
+          "title": "拉萨瑞吉 · 客房展示",
+          "alt": "万豪官网展示的拉萨瑞吉度假酒店豪华客房，非已订房型承诺",
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/LXAXR/lxaxr-deluxe-room-8785-hor-wide.jpg?downsize=1000px:*&interpolation=progressive-bilinear&output-quality=80",
+          "source": "https://www.marriott.com/en-us/hotels/lxaxr-the-st-regis-lhasa-resort/photos/",
+          "credit": "万豪官网",
+          "width": 1000,
+          "height": 562
+        }
+      ]
     },
     {
       "id": "lozha",
@@ -80,7 +137,29 @@
       "checks": [
         "31日白马徒步后仍返回洛扎，车程与折返时限需要重核。",
         "1月1日退房，不覆盖1月1日晚。"
-      ]
+      ],
+      "photos": [
+        {
+          "title": "洛扎陇巴庄园 · 酒店外观",
+          "alt": "洛扎陇巴庄园酒店公开展示图：酒店外观，招牌可辨",
+          "url": "https://dimg04.c-ctrip.com/images/0202512000thrng7279BC_W_1280_853_R5_Q70.jpg",
+          "source": "https://hotels.ctrip.com/hotels/108123049.html",
+          "credit": "携程门店页",
+          "width": 481,
+          "height": 360
+        },
+        {
+          "title": "洛扎陇巴庄园 · 客房展示",
+          "alt": "洛扎陇巴庄园 · 客房展示，门店客房展示，不代表已订房型",
+          "url": "https://dimg04.c-ctrip.com/images/1mc0212000th80kpjCFB5_W_1280_853_R5_Q70.jpg",
+          "source": "https://hotels.ctrip.com/hotels/108123049.html",
+          "credit": "携程门店页",
+          "width": 506,
+          "height": 360
+        }
+      ],
+      "link": "https://hotels.ctrip.com/hotels/108123049.html",
+      "linkLabel": "查看门店与更多图片"
     },
     {
       "id": "flex",
@@ -93,7 +172,8 @@
       "checks": [
         "色乡、措玉、拉萨或泽当的替代走法均不代表已有订单。",
         "补走白马与转场泽当不能在同一天叠加。"
-      ]
+      ],
+      "photoPendingTitle": "住宿待定，暂不配酒店图"
     },
     {
       "id": "airport",
@@ -106,9 +186,31 @@
       "checks": [
         "返程前一晚住机场片区，不再绕回拉萨市区。",
         "次日3U6140于11:50从T3出发，核对酒店接送和提前到场时间。"
-      ]
+      ],
+      "photos": [
+        {
+          "title": "平措康桑贡嘎机场店 · 门店入口",
+          "alt": "平措康桑酒店（贡嘎机场店）公开展示图：门店入口实景风格，平措康桑招牌清晰可辨；542×360",
+          "url": "https://dimg04.c-ctrip.com/images/1mc1112000kwayyo54064_W_1280_853_R5_Q70.jpg",
+          "source": "https://hotels.ctrip.com/hotels/128326348.html",
+          "credit": "携程门店页",
+          "width": 542,
+          "height": 360
+        },
+        {
+          "title": "平措康桑贡嘎机场店 · 餐厅",
+          "alt": "平措康桑贡嘎机场店 · 餐厅，门店餐厅空间展示",
+          "url": "https://dimg04.c-ctrip.com/images/0205j12000kfqqq2o0D0D_W_1280_853_R5_Q70.jpg",
+          "source": "https://hotels.ctrip.com/hotels/128326348.html",
+          "credit": "携程门店页",
+          "width": 542,
+          "height": 360
+        }
+      ],
+      "link": "https://hotels.ctrip.com/hotels/128326348.html",
+      "linkLabel": "查看门店与更多图片"
     }
   ],
   "checkedAt": "2026-11-10",
-  "note": "截至本次更新，12月25日晚与1月1日晚住宿待落实；松赞已订1晚但日期待核。公开页面不含姓名、订单号、票号、联系方式或证件信息。"
+  "note": "截至本次更新，12月25日晚与1月1日晚住宿待落实；松赞已订1晚，具体门店与日期待核。公开页面不含姓名、订单号、票号、联系方式或证件信息。"
 }

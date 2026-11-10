@@ -54,13 +54,29 @@ function stayGroups(){
  if(f&&state.ending==='shannan'){f.summary='若白马已完成且道路允许，1月1日转场泽当；这晚需另订。';f.hotel='泽当住宿待定';f.alt='区域约3550米'}
  return groups;
 }
+function hotelGallery(g){
+ const list=g.photos||[];
+ if(!list.length)return `<div class="hotel-photo-pending"><span aria-hidden="true">▧</span><div><strong>${esc(g.photoPendingTitle||'酒店照片待补充')}</strong><p>${esc(g.photoPending||'住宿尚未确定，确认酒店后再附对应门店照片。')}</p></div></div>`;
+ return `<div class="hotel-gallery count-${list.length}" aria-label="${esc(g.hotel)}照片">${list.map((p,i)=>`<figure class="hotel-photo"><button type="button" data-hotel-photo="${g.id}:${i}" aria-label="放大${esc(p.title)}"><img src="${esc(p.url)}" alt="${esc(p.alt)}" width="${p.width||1000}" height="${p.height||667}" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="hotel-photo-fallback" hidden>照片暂时无法加载，请查看下方来源页。</span><span class="hotel-photo-zoom" aria-hidden="true">放大 ↗</span></button><figcaption><strong>${esc(p.title)}</strong><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">${esc(p.credit)} ↗</a></figcaption></figure>`).join('')}</div><p class="hotel-photo-disclaimer">${esc(g.photoNote||'门店公开展示图，仅供了解环境，不代表已订房型、窗景或入住季节。')}<br>图片版权归原权利人所有，外链展示；核对于2026.11.10。</p>`;
+}
+function bindHotelPhotoFallbacks(){
+ document.querySelectorAll('.hotel-photo img,.hotel-dialog-image img,.hotel-feature-photo img').forEach(img=>{
+ const failed=()=>{img.hidden=true;const note=img.parentElement.querySelector('.hotel-photo-fallback');if(note)note.hidden=false;};
+ img.addEventListener('error',failed,{once:true});if(img.complete&&img.naturalWidth===0)failed();
+ });
+}
+function openHotelPhoto(value){
+ const [group,index]=value.split(':'),g=stayGroups().find(a=>a.id===group),p=g?.photos?.[Number(index)];if(!p)return;
+ openDialog(`<figure class="hotel-dialog-image"><img src="${esc(p.url)}" alt="${esc(p.alt)}" width="${p.width||1000}" height="${p.height||667}" referrerpolicy="no-referrer"><span class="hotel-photo-fallback" hidden>照片暂时无法加载，请查看来源页。</span></figure><div class="dialog-copy"><p class="eyebrow">HOTEL PHOTOGRAPH</p><h2 id="dialog-title">${esc(p.title)}</h2><p>${esc(g.photoNote||'门店公开展示图，不代表已订房型、窗景或入住季节。')}</p><div class="dialog-credit">${esc(p.credit)} · 图片版权归原权利人所有，未取得开放转载许可，本站采用外链展示。<br><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">查看门店与图片来源 ↗</a></div></div>`);
+ $('#detail-dialog').setAttribute('aria-labelledby','dialog-title');bindHotelPhotoFallbacks();
+}
 function renderStays(){
  const groups=stayGroups();if(!groups.length){$('#stay-panel').innerHTML='<p class="load-error">住宿资料暂未加载成功，请刷新页面。以实际订单为准。</p>';return}
  if(!groups.some(g=>g.id===state.stay))state.stay='songtsam';const g=groups.find(g=>g.id===state.stay);
  $('#stay-tabs').innerHTML=groups.map(a=>`<button role="tab" id="stay-tab-${a.id}" aria-controls="stay-panel" aria-selected="${a.id===state.stay}" tabindex="${a.id===state.stay?0:-1}" data-stay="${a.id}">${esc(a.title)}</button>`).join('');
  $('#stay-panel').setAttribute('aria-labelledby','stay-tab-'+g.id);
- $('#stay-panel').innerHTML=`<div class="stay-area-heading"><div><h3>${esc(g.title)}</h3><p>${esc(g.summary)}</p></div><span>${esc(g.dates)} · ${esc(g.alt)}</span></div><article class="hotel-card"><span class="hotel-type">${esc(g.status)}</span><h4>${esc(g.hotel)}</h4><ul>${g.checks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>${g.link?`<a class="text-link" href="${esc(g.link)}" target="_blank" rel="noopener noreferrer">${esc(g.linkLabel)} ↗</a>`:''}</article>`;
- $('#stay-note').textContent=stays.note;
+ $('#stay-panel').innerHTML=`<div class="stay-area-heading"><div><h3>${esc(g.title)}</h3><p>${esc(g.summary)}</p></div><span>${esc(g.dates)} · ${esc(g.alt)}</span></div><article class="hotel-card"><span class="hotel-type">${esc(g.status)}</span><h4>${esc(g.hotel)}</h4>${hotelGallery(g)}<ul>${g.checks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>${g.link?`<a class="text-link" href="${esc(g.link)}" target="_blank" rel="noopener noreferrer">${esc(g.linkLabel)} ↗</a>`:''}</article>`;
+ $('#stay-note').textContent=stays.note;bindHotelPhotoFallbacks();
 }
 function stayForDay(i){return i===0?'sosong':i===1?'jeba':i===2?'songtsam':[6,7].includes(i)?'lozha':i===8?'flex':i===9?'airport':'lhasa'}
 function renderFlights(){
@@ -94,6 +110,10 @@ function renderReferences(){
  $('#source-list').innerHTML=[...sources,...extras].map(s=>`<article class="source-item"><div><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a><small>${esc(s.org)} · ${esc(s.date)}</small></div><p>${esc(s.note)}</p></article>`).join('');
  $('#credits-list').innerHTML=`<div class="credits-grid">${Object.entries(photos).map(([id,p])=>`<div class="credit-item"><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">${esc(p.title)} ↗</a>${esc(p.author)} · ${p.licenseUrl?`<a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(p.license)}</a>`:esc(p.license)}<br>${esc(p.date)}<br>${esc(p.caption)}<br>${esc(p.changes)}</div>`).join('')}</div>`;
 }
+function renderHotelCredits(){
+ const entries=stayGroups().filter(g=>g.photos?.length);
+ $('#credits-list').insertAdjacentHTML('beforeend',`<h3 class="hotel-credits-title">酒店照片</h3><p class="hotel-photo-disclaimer">酒店照片与上方开放许可景观图分开管理。以下为酒店官网或预订平台的外链展示图，版权归原权利人所有，未取得开放转载许可；不代表房型承诺或冬季实况。</p><div class="credits-grid">${entries.map(g=>`<div class="credit-item"><strong>${esc(g.hotel)}</strong>${g.photos.map(p=>`<a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">${esc(p.title)} · ${esc(p.credit)} ↗</a>`).join('')}${g.photoNote?`<p>${esc(g.photoNote)}</p>`:''}</div>`).join('')}</div>`);
+}
 function renderChecklist(){const saved=storage.get('checks',[]);let group='';$('#checklist').innerHTML=checklist.map(([g,t],i)=>{const title=g!==group?`<p class="check-group">${esc(g)}</p>`:'';group=g;return title+`<label class="check-row"><input type="checkbox" id="check-${i}" data-check="${i}" ${saved[i]?'checked':''}><span>${esc(t)}</span></label>`}).join('');$('#trip-notes').value=storage.get('notes','');updateCheckProgress()}
 function updateCheckProgress(){const n=$$('[data-check]').filter(c=>c.checked).length;$('#check-count').textContent=n+' / '+checklist.length;$('#check-progress').style.width=n/checklist.length*100+'%'}
 function exportText(){
@@ -117,6 +137,7 @@ document.addEventListener('click',async e=>{
  if(b.dataset.view){state.view=b.dataset.view;applyView();writeUrl();return}
  if(b.dataset.place){openPlace(b.dataset.place);return}
  if(b.dataset.photo){openPhoto(b.dataset.photo);return}
+ if(b.dataset.hotelPhoto){openHotelPhoto(b.dataset.hotelPhoto);return}
  if(b.dataset.filter){state.filter=b.dataset.filter;renderPlaces();return}
  if(b.dataset.stay){state.stay=b.dataset.stay;renderStays();return}
  if(b.dataset.dayStay!==undefined){state.stay=stayForDay(Number(b.dataset.dayStay));renderStays();scrollToId('stays');return}
@@ -148,5 +169,5 @@ const loaded=await Promise.allSettled([readJSON('assets/photos.json'),readJSON('
 if(loaded[0].status==='fulfilled')photos=loaded[0].value;
 if(loaded[1].status==='fulfilled')stays=loaded[1].value;
 if(loaded[2].status==='fulfilled')extraSources=loaded[2].value;
-renderChecklist();renderAll();renderFlights();renderReferences();
+renderChecklist();renderAll();renderFlights();renderReferences();renderHotelCredits();
 if(loaded.some(r=>r.status==='rejected'))toast('部分参考资料未能加载，请刷新页面重试');
