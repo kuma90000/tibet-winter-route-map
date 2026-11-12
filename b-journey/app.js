@@ -1,4 +1,4 @@
-import {trip,flights,places,getDays,altitudeRoute,checklist,sources} from './data.js';
+import {trip,flights,places,getDays,altitudeRoute,checklist,sources} from './data.js?v=20261112';
 
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -165,7 +165,7 @@ window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.sea
 window.addEventListener('scroll',()=>{if(hasScrolled)return;hasScrolled=true;requestAnimationFrame(()=>{const height=document.documentElement.scrollHeight-innerHeight;$('#reading-progress').style.width=(height>0?scrollY/height*100:0)+'%';hasScrolled=false})},{passive:true});
 function renderAll(){renderDay();renderPlaces();renderStays();renderAltitude();renderRouteMap();renderEnding();writeUrl()}
 async function readJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(path+' '+r.status);return r.json()}
-const loaded=await Promise.allSettled([readJSON('assets/photos.json'),readJSON('stays.json'),readJSON('practical-sources.json')]);
+const loaded=await Promise.allSettled([readJSON('assets/photos.json'),readJSON('stays.json?v=20261112'),readJSON('practical-sources.json')]);
 if(loaded[0].status==='fulfilled')photos=loaded[0].value;
 if(loaded[1].status==='fulfilled')stays=loaded[1].value;
 if(loaded[2].status==='fulfilled')extraSources=loaded[2].value;
