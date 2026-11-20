@@ -7,13 +7,25 @@
       "alt": "低海拔中转",
       "summary": "Moxy 已订，次日衔接林芝早班机。",
       "status": "已订",
-      "hotel": "重庆 Moxy",
+      "hotel": "重庆 Moxy 酒店（解放碑）",
       "checks": [
-        "具体分店名称待补充。",
+        "地址：重庆市渝中区八一路168号。",
         "24日07:15起飞，提前核对酒店至机场的早班送机。"
       ],
-      "photoPendingTitle": "重庆 Moxy · 门店待核",
-      "photoPending": "尚未提供具体分店，先不放可能错配的酒店图片；核对门店后补图。"
+      "link": "https://www.marriott.com/en-us/hotels/ckgox-moxy-chongqing/photos/",
+      "linkLabel": "查看万豪官方酒店图库",
+      "photoNote": "万豪官网酒店外观图，仅用于识别门店，不代表已订房型。",
+      "photos": [
+        {
+          "title": "重庆 Moxy · 酒店外观",
+          "alt": "重庆 Moxy 酒店的建筑外观，万豪官方图库",
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/ox-ckgox-exterior-21891%3AClassic-Hor?fit=constrain&wid=1336",
+          "source": "https://www.marriott.com/en-us/hotels/ckgox-moxy-chongqing/photos/",
+          "credit": "万豪官方图库",
+          "width": 1336,
+          "height": 1002
+        }
+      ]
     },
     {
       "id": "sosong",
